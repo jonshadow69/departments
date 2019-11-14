@@ -1,0 +1,5 @@
+<h1><%= @department.name %> - <%= @topic.name %></h1>
+<p><%= @topic.body %></p>
+<%= link_to 'Edit Topic', edit_department_topic_path([@department, @topic]) %>
+<%= link_to 'Delete Topic', [@department, @topic], method: :delete %>
+<%= link_to 'Back To Topics', department_topics_path(@department) %>

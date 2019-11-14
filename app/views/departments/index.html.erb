@@ -1,0 +1,12 @@
+<h1> Welcome to the most ghetto reddit in existence. </h1>
+<h3> An era of Legitness <h3>
+<%=image_tag("bleachii.gif", :align=> "middle")%>
+<h2>Click a Department To View Content</h2>
+<%= link_to 'Create a new department', new_department_path %>
+<ul>
+  <% @departments.each do |department| %>
+    <li><%= link_to department.name, department %></li>
+  <% end %>
+</ul>
+
+
